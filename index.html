@@ -26,9 +26,19 @@
             //  'mapbox://styles/mapbox/outdoors-v10'  
             //  'mapbox://styles/mapbox/satellite-v10' 
             //  'mapbox://styles/mapbox/traffic-night-v2'
-            center: [-78.6382, 35.7796], // change starting position to coordinates associated w/ your data.
+            center: [-79.151, 35.7741], // change starting position to coordinates associated w/ your data.
             zoom: 6 // starting zoom
             });
+            map.on('load', function () {
+            map.addSource('manns-chapel-wetlands2', {
+                type: 'vector',
+                url: https://github.com/kesst/GIS-595-topic8/blob/master/manns-chapel-wetlands2.geojson
+                });
+            map.addLayer({
+                'id': 'manns-chapel-wetlands2',
+                'type': 'polygon',
+                'source': 'manns-chapel-wetlands2'
+                });
           </script>
       </body>
     </html>
