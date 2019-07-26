@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="en"><Esri><CreaDate>20190725</CreaDate><CreaTime>20100500</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="c:\program files (x86)\arcgis\desktop10.3\ArcToolbox\Toolboxes\Spatial Analyst Tools.tbx\ExtractByMask" Date="20190725" Time="201005">ExtractByMask bynum.tif manns_chapel C:\Users\Kesselring\Manns_chapel_precinct\Bynum_topo</Process></lineage></DataProperties></Esri></metadata>
