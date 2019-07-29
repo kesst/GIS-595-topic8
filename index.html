@@ -18,7 +18,7 @@
 
             var map = new mapboxgl.Map({
             container: 'map', // container id
-            style: 'mapbox://styles/mapbox/streets-v10', //hosted style id;  
+            style: 'mapbox://styles/mapbox/outdoors-v10', //hosted style id;  
             //others: 
             //  'mapbox://styles/mapbox/light-v10'
             //  'mapbox://styles/mapbox/streets-v10' 
@@ -29,14 +29,14 @@
             center: [-79.151, 35.7741], // change starting position to coordinates associated w/ your data.
             zoom: 6 // starting zoom
             });
-            map.on('load', function () {
+            // map.on('load', function () {
             map.addSource('manns-chapel-wetlands2', {
-                type: 'vector',
-                url: https://github.com/kesst/GIS-595-topic8/blob/master/manns-chapel-wetlands2.geojson
+                type: 'geojson',
+                data: "https://raw.githubusercontent.com/kesst/GIS-595-topic8/master/manns-chapel-wetlands2.geojson"
                 });
             map.addLayer({
                 'id': 'manns-chapel-wetlands2',
-                'type': 'polygon',
+                'type': 'fill',
                 'source': 'manns-chapel-wetlands2'
                 });
           </script>
